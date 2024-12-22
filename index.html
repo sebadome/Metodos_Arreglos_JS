@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <h1>Todo List</h1>
+
+    <div class="resumen">
+      <p>Total: <span id="total-tareas">0</span></p>
+      <p>Realizadas: <span id="tareas-completadas">0</span></p>
+    </div>
+
+    <div class="agregar-tarea">
+      <input type="text" placeholder="Nueva tarea" id="nueva-tarea" />
+      <button id="agregar-tarea-btn" class="btn-agregar">Agregar</button>
+    </div>
+
+    <table class="tabla-tareas">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Tarea</th>
+          <th>Completada</th>
+          <th>Eliminar</th>
+        </tr>
+      </thead>
+      <tbody id="lista-tareas">
+        <!-- Filas dinámicas aquí -->
+      </tbody>
+    </table>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
